@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Paling Nggak Berguna (Tapi Seru)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="main-body">
+
+    <header class="main-header">
+        <h1>Selamat Datang di Ketiadaan</h1>
+        <p>Silakan klik, gerakkan, atau sekadar... ada.</p>
+    </header>
+
+    <main class="content-grid">
+        <!-- Fitur 1: Tombol Tak Berguna Klasik -->
+        <section class="feature-card" id="useless-button-card">
+            <h2>Tombol Klasik</h2>
+            <button id="uselessButton">Jangan Klik Aku!</button>
+            <p id="uselessButtonFeedback" class="feedback"></p>
+        </section>
+
+        <!-- Fitur 2: Tombol Kabur -->
+        <section class="feature-card" id="running-button-card">
+            <h2>Coba Tangkap Aku!</h2>
+            <div class="runner-container">
+                <button id="runningButton">Klik sini!</button>
+            </div>
+        </section>
+
+        <!-- Fitur 3: Pengubah Warna Latar Acak -->
+        <section class="feature-card" id="color-frenzy-card">
+            <h2>Disko Latar!</h2>
+            <button id="colorChangeButton">Ganti Warna Latar</button>
+            <p>(Atau gerakkan mouse ke sini)</p>
+        </section>
+
+        <!-- Fitur 4: Pengikut Kursor Aneh -->
+        <section class="feature-card" id="cursor-follower-card">
+            <h2>Ada yang Mengikuti...</h2>
+            <p>Gerakkan mouse Anda di seluruh halaman.</p>
+            <div id="cursorFollower"></div>
+        </section>
+
+        <!-- Fitur 5: Teks Mengetik Sendiri (dan Menghapus) -->
+        <section class="feature-card" id="typing-text-card">
+            <h2>Pesan Misterius</h2>
+            <p id="typingText" class="code-font"></p>
+        </section>
+
+        <!-- Fitur 6: Switch Absurd -->
+        <section class="feature-card" id="absurd-switch-card">
+            <h2>Mode Kegunaan</h2>
+            <label class="switch">
+                <input type="checkbox" id="uselessSwitch">
+                <span class="slider round"></span>
+            </label>
+            <span id="switchLabel">Mode Berguna (Bohong)</span>
+        </section>
+
+        <!-- Fitur 7: Area Klik Penghasil Konfeti -->
+        <section class="feature-card" id="confetti-card">
+            <h2>Zona Perayaan</h2>
+            <div id="confettiArea" class="interactive-area">
+                <p>Klik di area ini!</p>
+            </div>
+        </section>
+
+        <!-- Fitur 8: Scroll Tak Terhingga Palsu -->
+        <section class="feature-card" id="infinite-scroll-card">
+             <h2>Scroll Terus...</h2>
+             <div id="fakeInfiniteScroll" class="scroll-box">
+                 <!-- Konten akan ditambahkan JS -->
+             </div>
+        </section>
+
+        <!-- Fitur 9: Gambar yang Bergetar -->
+        <section class="feature-card" id="shaky-image-card">
+            <h2>Gambar Gelisah</h2>
+            <img id="shakyImage" src="https://via.placeholder.com/150/771796" alt="Placeholder Goyang">
+            <!-- Ganti src dengan gambar lucu/aneh -->
+        </section>
+
+         <!-- Fitur 10: Penghitung Klik Nggak Penting -->
+        <section class="feature-card" id="click-counter-card">
+            <h2>Skor Ketidakbergunaan</h2>
+            <p>Total Klik Nggak Penting: <span id="clickCount">0</span></p>
+            <button id="incrementUselessClicks">Tambah Skor!</button>
+        </section>
+
+        <!-- ... Tambahkan container section untuk fitur 11-100 di sini ... -->
+        <!-- Ide lain: Area gambar acak, Suara tombol aneh, Teks terbalik, Elemen melayang, Loading bar palsu, dll. -->
+
+    </main>
+
+    <footer class="main-footer">
+        <p>Sebuah Mahakarya Ketidakbergunaan oleh Frenki</p>
+        <p id="footerMessage">Semoga harimu... ada.</p>
+    </footer>
+
+    <!-- Library untuk confetti (opsional, tapi keren) -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
